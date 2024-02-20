@@ -2,14 +2,14 @@
 
 ## Introduction ##
 
-Provides controller functionality to Slim Framework v3. Also includes PHPUnit TestCase for testing controllers. This is an upgrade branch from the [text](https://github.com/martynbiz/slim3-controller) package.
+Provides controller functionality to Slim Framework v4. Also includes PHPUnit TestCase for testing controllers. This is an upgrade branch from the [text](https://github.com/martynbiz/slim3-controller) package.
 
 ## Installation ##
 
 Composer
 
 ```php
-composer require martynbiz/slim3-controller
+composer require homstar/slim4-controller
 ```
 
 ## Usage ##
@@ -50,7 +50,7 @@ $app->group('/articles', function () use ($app) {
 
 namespace App\Controller;
 
-use MartynBiz\Slim3Controller\Controller;
+use HomStar\Slim4Controller\Controller;
 
 class ExampleController extends Controller
 {
