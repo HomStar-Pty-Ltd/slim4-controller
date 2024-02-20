@@ -10,7 +10,7 @@ use Slim\Http\Uri;
 use Symfony\Component\DomCrawler\Crawler;
 
 abstract class TestCase extends \PHPUnit_Framework_TestCase
-{
+{ 
     /**
      * @var MartynBiz\Slim3Controller\App
      */
