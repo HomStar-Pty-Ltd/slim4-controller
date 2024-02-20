@@ -1,5 +1,5 @@
 {
-    "name": "homhero/slim4-controller",
+    "name": "homstar/slim4-controller",
     "type": "library",
     "description": "Provides controller functionality to Slim Framework v3. Also includes PHPUnit TestCase for testing controllers.",
     "keywords": ["slim", "slim4", "mvc", "controller"],
