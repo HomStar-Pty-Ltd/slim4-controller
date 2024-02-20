@@ -1,8 +1,8 @@
-# Slim v3 controller #
+# Slim v4 controller #
 
 ## Introduction ##
 
-Provides controller functionality to Slim Framework v3. Also includes PHPUnit TestCase for testing controllers.
+Provides controller functionality to Slim Framework v3. Also includes PHPUnit TestCase for testing controllers. This is an upgrade branch from the [text](https://github.com/martynbiz/slim3-controller) package.
 
 ## Installation ##
 

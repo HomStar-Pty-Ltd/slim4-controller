@@ -1,26 +1,25 @@
 {
-    "name": "martynbiz/slim3-controller",
+    "name": "homhero/slim4-controller",
     "type": "library",
     "description": "Provides controller functionality to Slim Framework v3. Also includes PHPUnit TestCase for testing controllers.",
-    "keywords": ["slim", "slim3", "mvc", "controller"],
+    "keywords": ["slim", "slim4", "mvc", "controller"],
     "homepage": "http://github.com/martynbiz/slim3-controller",
     "license": "MIT",
     "authors": [
         {
-            "name": "Martyn Bissett",
-            "email": "martynbissett@yahoo.co.uk",
-            "homepage": "http://martyn.biz",
+            "name": "Kim Richardson",
+            "email": "kim@homstar.com.au",
             "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "MartynBiz\\Slim3Controller\\": "src/"
+            "HomHero\\Slim4Controller\\": "src/"
         }
     },
     "require": {
-        "php": ">=5.3.0",
-        "slim/slim": "~3.0",
+        "php": ">=7.4.0",
+        "slim/slim": "~4.0",
         "symfony/dom-crawler": "^3.0",
         "symfony/css-selector": "^3.0"
     },
