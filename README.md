@@ -250,8 +250,3 @@ class ExampleControllerTest extends TestCase
     }
 }
 ```
-
-TODO
-doc - getCookie
-tests - cookies not available, why?
-body missing in tests - why??
