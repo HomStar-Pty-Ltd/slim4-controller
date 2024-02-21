@@ -1,6 +1,6 @@
 <?php
 
-namespace MartynBiz\Slim3Controller\Test\PHPUnit;
+namespace Homstar\Slim4Controller\Test\PHPUnit;
 
 use Slim\Http\Environment;
 use Slim\Http\Headers;

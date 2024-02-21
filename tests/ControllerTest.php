@@ -1,6 +1,6 @@
 <?php
 
-use MartynBiz\Slim3Controller\Controller;
+use Homstar\Slim4Controller\Controller;
 
 /**
  * We need a test class to extend the abstract Controller class

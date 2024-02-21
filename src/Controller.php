@@ -1,9 +1,9 @@
 <?php
 
-namespace MartynBiz\Slim3Controller;
+namespace Homstar\Slim4Controller;
 
-use MartynBiz\Slim3Controller\Http\Request;
-use MartynBiz\Slim3Controller\Http\Response;
+use Homstar\Slim4Controller\Http\Request;
+use Homstar\Slim4Controller\Http\Response;
 use Psr\Http\Message\UriInterface;
 
 /**

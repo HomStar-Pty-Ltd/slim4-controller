@@ -1,8 +1,9 @@
 <?php
 
-namespace MartynBiz\Slim3Controller\Http;
+namespace Homstar\Slim4Controller\Http;
 
 use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ResponseFactoryInterface as SlimResponse;
 
 /**
  * Extends Slim's Response with additional methods for asserting controllers during
@@ -11,7 +12,7 @@ use Psr\Http\Message\ResponseInterface;
  * @link https://github.com/php-fig/http-message/blob/master/src/MessageInterface.php
  * @link https://github.com/php-fig/http-message/blob/master/src/ResponseInterface.php
  */
-class Response extends \Slim\Http\Response implements ResponseInterface
+class Response extends SlimResponse implements ResponseInterface
 {
     const HTTP_CONTINUE = 100;
     const HTTP_SWITCHING_PROTOCOLS = 101;
@@ -156,4 +157,19 @@ class Response extends \Slim\Http\Response implements ResponseInterface
     {
         $this->actionName = $actionName;
     }
+
+	public function getStatusCode() {}
+	public function withStatus(int $code, string $reasonPhrase = '') {}
+	public function getReasonPhrase() {}
+	public function getProtocolVersion() {}
+	public function withProtocolVersion($version) {}
+	public function getHeaders() {}
+	public function hasHeader($name) {}
+	public function getHeader($name) {}
+	public function getHeaderLine($name) {}
+	public function withHeader($name, $value) {}
+	public function withAddedHeader($name, $value) {}
+	public function withoutHeader($name) {}
+	public function getBody() {}
+	public function withBody($body) {}
 }

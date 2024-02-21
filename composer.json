@@ -1,9 +1,9 @@
 {
     "name": "homstar/slim4-controller",
     "type": "library",
-    "description": "Provides controller functionality to Slim Framework v3. Also includes PHPUnit TestCase for testing controllers.",
+    "description": "Provides controller functionality to Slim Framework v4. Also includes PHPUnit TestCase for testing controllers.",
     "keywords": ["slim", "slim4", "mvc", "controller"],
-    "homepage": "http://github.com/martynbiz/slim3-controller",
+    "homepage": "https://github.com/HomStar-Pty-Ltd/slim4-controller",
     "license": "MIT",
     "authors": [
         {
@@ -20,8 +20,10 @@
     "require": {
         "php": ">=7.4.0",
         "slim/slim": "~4.0",
+		"slim/psr7": "^1.6.1",
         "symfony/dom-crawler": "^3.0",
-        "symfony/css-selector": "^3.0"
+        "symfony/css-selector": "^3.0",
+        "nyholm/psr7": "^1.8.1"
     },
     "require-dev": {
         "phpunit/phpunit": "4.8.*"

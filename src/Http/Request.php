@@ -1,8 +1,9 @@
 <?php
 
-namespace MartynBiz\Slim3Controller\Http;
+namespace Homstar\Slim4Controller\Http;
 
 use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\ServerRequestFactoryInterface as SlimRequest;
 
 /**
  * Request
@@ -15,7 +16,7 @@ use Psr\Http\Message\ServerRequestInterface;
  * @link https://github.com/php-fig/http-message/blob/master/src/RequestInterface.php
  * @link https://github.com/php-fig/http-message/blob/master/src/ServerRequestInterface.php
  */
-class Request extends \Slim\Http\Request implements ServerRequestInterface
+class Request extends SlimRequest implements ServerRequestInterface
 {
     /**
      * Get a cookie, or a default value if not set
@@ -30,4 +31,36 @@ class Request extends \Slim\Http\Request implements ServerRequestInterface
 
         return array_key_exists($name, $cookies) ? $cookies[$name] : $defaultValue;
     }
+
+	public function getServerParams() {}
+	public function getCookieParams() {}
+	public function withCookieParams(array $cookies) {}
+	public function getQueryParams() {}
+	public function withQueryParams(array $query) {}
+	public function getUploadedFiles() {}
+	public function withUploadedFiles(array $uploadedFiles) {}
+	public function getParsedBody() {}
+	public function withParsedBody($data) {}
+	public function getAttributes() {}
+	public function getAttribute($name, $default=null) {}
+	public function withAttribute($name, $value) {}
+	public function withoutAttribute($name) {}
+	public function getRequestTarget() {}
+	public function withRequestTarget($requestTarget) {}
+	public function getMethod() {}
+	public function withMethod($method) {}
+	public function getUri() {}
+	public function withUri($uri, $preserveHost=false) {}
+	public function getProtocolVersion() {}
+	public function withProtocolVersion($version) {}
+	public function getHeaders() {}
+	public function hasHeader($name) {}
+	public function getHeader($name) {}
+	public function getHeaderLine($name) {}
+	public function withHeader($name, $value) {}
+	public function withAddedHeader($name, $value) {}
+	public function withoutHeader($name) {}
+	public function getBody() {}
+	public function withBody($body) {}
+	public function getRequest() {}
 }
