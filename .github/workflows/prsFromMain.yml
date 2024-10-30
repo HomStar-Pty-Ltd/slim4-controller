@@ -1,0 +1,27 @@
+
+  name: Restrict Pull Requests to Release Branches
+  on:
+    pull_request:
+      branches:
+        - release/*
+        - releases/*
+
+  jobs:
+    restrict-pr:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+
+        - name: Check source branch
+          env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          id: check_branch
+          run: |
+            if [ "${{ github.event.pull_request.head.ref }}" != "main" ] && [ "${{ github.event.pull_request.head.ref }}" != "master" ]; then
+              echo "::error::Pull requests to release branches are only allowed from main or master."
+              echo "closing PR..."
+              gh pr close ${{ github.event.pull_request.number }} --comment "Closed due to branch restriction: Merges to 'Release' must come from 'Master' or 'Main' branches only."
+              exit 1
+            fi
+  
